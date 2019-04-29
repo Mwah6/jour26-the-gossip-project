@@ -18,7 +18,7 @@
 
  - Manger des pâtes (optionnel)
 
- - Lancer un 'rails db:seed' pour faire mouliner tout ça (vroum vroum)
+ - Lancer un 'rails db:seed' suivi d'un 'rails server' pour faire mouliner tout ça (vroum vroum)
 
  - Nous contacter avec bienveillance : 
 
