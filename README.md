@@ -22,9 +22,13 @@
 
  - Nous contacter avec bienveillance : 
 
- @Sebastien B
- @Nicephore 
- @Pyr
+ @Sebastien B / Sébastien Broin
+ 
+ @Nicephore / Victor Montagné (Aucun lien...) 
+ 
+ @Pyr / Pierre-Yves Rousseau (Aucun lien, non non toujours pas...)
+ 
+ @SKaramazov (non ça c'est pas vrai)
 
 
  Bien cordialement,
