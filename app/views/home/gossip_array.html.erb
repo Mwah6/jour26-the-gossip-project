@@ -1,0 +1,20 @@
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <!-- <th scope="col">#</th> -->
+      <th scope="col">Title</th>
+      <th scope="col">Author</th>
+      <%# <th scope="col">Handle</th> %>
+    </tr>
+  </thead>
+  <tbody>
+    <%- @gossip_array.each do |gossip| -%>
+      <tr>
+        <th><%= link_to gossip.title, user_display_path(gossip.id) %></th>
+        <th><%= link_to gossip.user.first_name + " " + gossip.user.last_name.upcase, user_display_path(gossip.user.id) %></th>
+      </tr>
+    <%- end -%>
+  </tbody>
+</table>
