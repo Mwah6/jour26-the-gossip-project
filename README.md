@@ -1,4 +1,6 @@
-# README
+# THE GOSSIP PROJECT
+SEBASTIEN BROIN @SEBASTIEN B, PIERRE-YVES ROUSSEAU @Pyr, VICTOR MONTAGNE @Nicephore
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
