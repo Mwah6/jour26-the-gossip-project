@@ -1,26 +1,31 @@
-# THE GOSSIP PROJECT
-SEBASTIEN BROIN @SEBASTIEN B, PIERRE-YVES ROUSSEAU @Pyr, VICTOR MONTAGNE @Nicephore
+# README 
+
+* Lisez moi !
 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* L'origine du Readme remonte à l'antiquité, à une époque où quelques mercenaires codaient des applications sur des blocs de marbre, où la recherche google la plus populaire était "comment centrer une pyramide".
 
-Things you may want to cover:
 
-* Ruby version
+* Depuis, le Readme se transmet de père en fils,  on y narre les aventures de quelques valeureux moussaillons en quête de découvertes. On y stocke les précieuses 'gem', on y grave des ruby scintillants.
 
-* System dependencies
+* Trève de circonvolutions,  si tu souhaites t'aventurer dans notre application, tu peux : 
 
-* Configuration
+ - Cloner le repo (easy)
 
-* Database creation
+ - Faire un bundle install (ok)
 
-* Database initialization
+ - Lancer un petit 'rails db:create' suivi de son célèbre 'rails db:migrate' (fastoche)
 
-* How to run the test suite
+ - Manger des pâtes (optionnel)
 
-* Services (job queues, cache servers, search engines, etc.)
+ - Lancer un 'rails db:seed' pour faire mouliner tout ça (vroum vroum)
 
-* Deployment instructions
+ - Nous contacter avec bienveillance : 
 
-* ...
+ @Sebastien B
+ @Nicephore 
+ @Pyr
+
+
+ Bien cordialement,
+ la Team Bordeaux 
