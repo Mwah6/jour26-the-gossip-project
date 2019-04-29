@@ -1,5 +1,7 @@
-<h1> Potin n°<%=@gossip.id%> ! </h1>
-<h2>Intitulé : <%=@gossip.title%>, créé le <%=@gossip.created_at%>,</h2>
-<h2>Par <%= link_to @gossip.user.first_name + " " + @gossip.user.last_name, user_display_path(@gossip.user.id) %>, <%=@gossip.user.age%> ans, de <%=@gossip.user.city.name%></h2>
-
-<p><%=@gossip.content%></p>
+<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+  <div class="card-header">Potin n°<%=@gossip.id%> ! <br>
+    <Intitulé : <%=@gossip.title%>, créé le <%=@gossip.created_at%>,</div>
+    <div class="card-body">
+      <h5 class="card-title">Par <%= link_to @gossip.user.first_name + " " + @gossip.user.last_name, user_display_path(@gossip.user.id) %>,<br> <%=@gossip.user.age%> ans,<br> de <%=@gossip.user.city.name%></h5>
+      <p class="card-text"><%=@gossip.content%></p>
+    </div>
