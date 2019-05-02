@@ -1,6 +1,6 @@
 <h1>Editer le commentaire</h1>
 
-<%= form_for @comment do |f| %>
+<%= form_for @comment, url: { action: "update" } do |f| %>
 
 <div class="form-group">
   <label>Contenu</label>
@@ -8,7 +8,7 @@
 </div>
 <div class="form-group">
   <button type="submit" class="btn btn-primary">Modifier le commentaire</button>
-  <a href="<%= comment_path(@comment.id)%>" class="btn btn-danger" data-confirm= "Etes-vous sûr ?" data-method=DELETE>Supprimer le commentaire</a>
+  <a href="<%= gossip_comment_path(@comment.id)%>" class="btn btn-danger" data-confirm= "Etes-vous sûr ?" data-method=DELETE>Supprimer le commentaire</a>
 
 </div>
 <% end %>

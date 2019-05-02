@@ -14,8 +14,10 @@ class GossipsController < ApplicationController
     @gossip = Gossip.new(content: params[:content], title: params[:title], user: User.all.sample)
 
     if @gossip.save # essaie de sauvegarder en base @gossip
+      flash[:success] = "Ton gossip a été ajouté !"
       redirect_to gossips_path
     else
+      flash[:danger] = "Ton gossip n'est pas valide !"
       render new_gossip_path
     end
   end
@@ -29,8 +31,10 @@ class GossipsController < ApplicationController
     @gossip = Gossip.find(params[:id])
 
     if @gossip.update(gossip_params)
+      flash[:success] = "Ton gossip a été modifié !"
       redirect_to @gossip
     else
+      flash[:danger] = "Ton gossip n'est pas valide !"
       render :edit
     end
   end

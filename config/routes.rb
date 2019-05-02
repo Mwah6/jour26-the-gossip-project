@@ -15,6 +15,9 @@ Rails.application.routes.draw do
   resources :users, only: [:show]
   resources :gossips, only: [:new, :create, :show, :index, :edit, :update, :destroy]
   resources :cities, only: [:show]
-  resources :comments, only: [:new, :create, :show, :edit, :update, :destroy]
+  resources :gossips do
+  resources :comments
+end
+  # resources :comments, only: [:new, :create, :show, :edit, :update, :destroy]
 
 end
