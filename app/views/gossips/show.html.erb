@@ -1,7 +1,24 @@
-<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+<div class="card bg-light mb-3" style="max-width: 48rem;">
   <div class="card-header">Potin n°<%=@gossip.id%> ! <br>
     <Intitulé : <%=@gossip.title%>, créé le <%=@gossip.created_at%>,</div>
     <div class="card-body">
-      <h5 class="card-title">Par <%= link_to @gossip.user.first_name + " " + @gossip.user.last_name, user_display_path(@gossip.user.id) %>,<br> <%=@gossip.user.age%> ans,<br> de <%=@gossip.user.city.name%></h5>
-      <p class="card-text"><%=@gossip.content%></p>
+      <h5 class="card-title">Par <%= link_to @gossip.user.first_name + " " + @gossip.user.last_name, user_path(@gossip.user.id) %>,<br>
+        <%=@gossip.user.age%> ans,<br> de <%= link_to @gossip.user.city.name, city_path(@gossip.user.city.id) %></h5>
+        <p class="card-text"><%=@gossip.content%></p>
+      </div>
     </div>
+  </div>
+  <a href="<%= edit_gossip_path(@gossip.id)%>" class="btn btn-primary">Editer le gossip</a>
+  <a href="<%= gossip_path(@gossip.id)%>" class="btn btn-danger" data-confirm= "Etes-vous sûr ?" data-method=DELETE>Supprimer le gossip</a>
+</div>
+<div class="list-group">
+  <%- @comments.each do |comment| -%>
+  <div class="card bg-light " style="max-width: 48rem;">
+    <a href="<%= edit_comment_path(comment.id) %>" class="list-group-item bg-light text-dark list-group-item-action active">
+      <p class="mb-1"><%=comment.content %></p>
+      <small><%=comment.user.first_name + " " + comment.user.last_name%></small>
+    </div>
+  </div>
+</div>
+
+<%- end -%>
