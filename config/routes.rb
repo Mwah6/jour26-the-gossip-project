@@ -12,12 +12,12 @@ Rails.application.routes.draw do
   # get '/gossip/:id', to: 'gossip#gossip_display', as: 'gossip_display'
   # get '/user/:id', to: 'user#user_display', as: 'user_display'
   # get '/static_pages/contact', to: 'static_pages#contact'
-  resources :users, only: [:show]
+  resources :users, only: [:show, :new, :create]
   resources :gossips, only: [:new, :create, :show, :index, :edit, :update, :destroy]
   resources :cities, only: [:show]
   resources :gossips do
-  resources :comments
-end
+    resources :comments
+  end
   # resources :comments, only: [:new, :create, :show, :edit, :update, :destroy]
 
 end

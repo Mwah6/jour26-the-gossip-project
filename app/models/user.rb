@@ -13,4 +13,5 @@ class User < ApplicationRecord
   validates :last_name, presence: true
   validates :age, presence: true
   validates :description, presence: true
+  has_secure_password
 end

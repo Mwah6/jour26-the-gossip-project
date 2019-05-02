@@ -18,7 +18,8 @@ User.destroy_all
     description: Faker::TvShows::BojackHorseman.quote,
     email: Faker::Internet.unique.email,
     age: rand(18..99),
-    city: City.all.sample
+    city: City.all.sample,
+    password: Faker::Creature::Dog.name
   )
 end
 
@@ -75,10 +76,9 @@ rand(20..40).times do
       recipient: recipient
     )
   end
-  
-  Comment.destroy_all
-  30.times do
-    Comment.create(content: Faker::Lorem.paragraph, user: User.all.sample, gossip: Gossip.all.sample)
-  end
+end
 
+Comment.destroy_all
+30.times do
+  Comment.create(content: Faker::Lorem.paragraph, user: User.all.sample, gossip: Gossip.all.sample)
 end
