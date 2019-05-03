@@ -1,3 +1,9 @@
+<h1>The Gossip Book</h1>
+<% if current_user %>
+<h2>Bienvenue <%= current_user.first_name %> !</h2>
+<%- end -%>
+<h2>Voulez-vous ajouter un nouveau potin ? </h2>
+<a href="<%= new_gossip_path %>" class="btn btn-primary">Créer un potin</a>
 
 <%- @gossip_array.each do |gossip| -%>
 <div class="card bg-light mb-3" style="max-width: 18rem;">
