@@ -17,10 +17,13 @@ class UsersController < ApplicationController
     if @user.save
       flash[:success] = "Ton user a été ajouté !"
       log_in @user
+      remember @user
       redirect_to gossips_path
     else
       flash[:danger] = "Ton user n'est pas valide !"
       render new_user_path
     end
   end
+
+
 end
